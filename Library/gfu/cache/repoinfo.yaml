@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-08-20T19:03:46.840-03:00
-  initializedAtString: 2019-08-20T18:34:21.289-03:00
+  lastUpdatedAtString: 2019-08-20T22:46:04.745-03:00
+  initializedAtString: 2019-08-20T22:46:04.745-03:00
   currentGitRemote:
     name: origin
     url: https://github.com/danieltorresBR/MemoryGame.git
@@ -25,13 +25,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-    tracking: 
+    tracking: origin/master
   currentConfigBranch:
     name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/danieltorresBR/MemoryGame.git
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/danieltorresBR/MemoryGame.git

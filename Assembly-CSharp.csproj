@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AddButtons.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\MenuInicial.cs" />
+    <Compile Include="Assets\Scripts\Play.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
