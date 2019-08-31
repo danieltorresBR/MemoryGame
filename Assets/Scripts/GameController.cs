@@ -23,6 +23,9 @@ public class GameController : MonoBehaviour {
 
     private string firstGuessPuzzle, secondGuessPuzzle;
 
+    [SerializeField]
+    private SpeekE speekE;
+
     private void Awake()
     {
         puzzles = Resources.LoadAll<Sprite>("Sprites/Candy");
@@ -97,8 +100,10 @@ public class GameController : MonoBehaviour {
 
             if(firstGuessPuzzle == secondGuessPuzzle){
                 Debug.Log("Cartas corretas");
+                speekE.reacao(1);
             } else {
                 Debug.Log("Tente outra vez");
+                speekE.reacao(2);
             }
 
             countGuesses++;

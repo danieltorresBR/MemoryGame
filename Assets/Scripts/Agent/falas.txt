@@ -1,0 +1,8 @@
+Código;EmoçãoClasse;Frase;
+1;Talk;Ola! tudo ok aqui.;
+2;Talk;Esperimente virar a carta 2 e 3.;
+3;Talk;Tente a 5 e a 6, acho que combinam.;
+4;Bravo;Você não escolheo minha carta.;
+5;Alegre;Obaaaa! Você escolheu minha carta.;
+6;Triste;Porque Você não escolheu minha carta?;
+7;Vergonha;Parece que não era a certa, que estranho.;
