@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-08-24T18:37:03.896-03:00
-  initializedAtString: 2019-08-24T18:37:03.849-03:00
+  lastUpdatedAtString: 2019-08-31T16:18:50.296-03:00
+  initializedAtString: 2019-08-31T16:18:49.514-03:00
   localBranches:
   - name: althierfson
-    tracking: 
+    tracking: origin/althierfson
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/althierfson
+    tracking: '[None]'
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -38,9 +42,9 @@ MonoBehaviour:
     values:
     - name: althierfson
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/danieltorresBR/MemoryGame.git
+      trackingBranch: althierfson
     - name: master
       remote:
         name: origin
@@ -51,10 +55,22 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - althierfson
       - HEAD
+      - master
     subKeyValues:
     - Values:
+      - name: althierfson
+        remote:
+          name: origin
+          url: https://github.com/danieltorresBR/MemoryGame.git
+        trackingBranch: 
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/danieltorresBR/MemoryGame.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/danieltorresBR/MemoryGame.git

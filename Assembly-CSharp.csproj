@@ -279,6 +279,12 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.1f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
+ <Reference Include="CTNAudio">
+ <HintPath>C:/Users/007br/Documents/TCC/MemoryGame/Assets/Plugins/crosstales/Common/NAudio/CTNAudio.dll</HintPath>
+ </Reference>
+ <Reference Include="RTVoiceUWPBridge">
+ <HintPath>C:/Users/007br/Documents/TCC/MemoryGame/Assets/Plugins/crosstales/RTVoice/Wrapper/WSA/Stub/RTVoiceUWPBridge.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/007br/Documents/TCC/MemoryGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
@@ -287,12 +293,6 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/007br/Documents/TCC/MemoryGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="CTNAudio">
- <HintPath>C:/Users/007br/Documents/TCC/MemoryGame/Assets/Plugins/crosstales/Common/NAudio/CTNAudio.dll</HintPath>
- </Reference>
- <Reference Include="RTVoiceUWPBridge">
- <HintPath>C:/Users/007br/Documents/TCC/MemoryGame/Assets/Plugins/crosstales/RTVoice/Wrapper/WSA/Stub/RTVoiceUWPBridge.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

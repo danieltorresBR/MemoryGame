@@ -35,7 +35,6 @@ public class SpeekE : MonoBehaviour{
         //Speaker.Speak(text.text, null, Speaker.VoiceForName("Microsoft Daniel"));
         Speaker.Speak(estadoAtual.msg, som, Speaker.VoiceForName("Microsoft Daniel"));
         ctrArq.registra(estadoAtual.msg, estadoAtual.codigo, estadoAtual.emocao);
-        Debug.Log("passou a frase");
     }
 
     void Update(){
@@ -45,6 +44,16 @@ public class SpeekE : MonoBehaviour{
 
     }
 
+    public void setPassivo(){
+        anim.SetBool(animState, false);
+        anim.SetBool("Passivo_1", true);
+    }
+
+    public void startAnimation(){
+        anim.SetBool(animState, true);
+        anim.SetBool("Passivo_1", false);
+    }
+
     private void animCtr(){
         /*
             Essa função é responsavel por detectar a voz do agente e ativa a animação correspondente.
@@ -52,13 +61,13 @@ public class SpeekE : MonoBehaviour{
         */
 
         if(som.isPlaying == true){
-            anim.SetBool(animState, true);
-            anim.SetBool("Passivo_1", false);
+            //anim.SetBool(animState, true);
+            //anim.SetBool("Passivo_1", false);
             ballonImage.SetActive(true);
         }
         if(som.isPlaying == false){
-            anim.SetBool(animState, false);
-            anim.SetBool("Passivo_1", true);
+            //anim.SetBool(animState, false);
+            //anim.SetBool("Passivo_1", true);
             ballonImage.SetActive(false);
         }
     }
@@ -84,7 +93,7 @@ public class SpeekE : MonoBehaviour{
 
             setConf(estadoAtual);
 
-            Speek();
+            startAnimation();
         }
         if(sentimento == 2){
             estadoAtual = ctrArq.getFrases("6");
@@ -92,7 +101,7 @@ public class SpeekE : MonoBehaviour{
 
             setConf(estadoAtual);
 
-            Speek();
+            startAnimation();
         }
     }
 }
