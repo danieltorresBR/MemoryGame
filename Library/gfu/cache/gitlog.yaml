@@ -13,9 +13,179 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-08-31T16:18:52.130-03:00
-  initializedAtString: 2019-08-31T16:18:51.776-03:00
+  lastUpdatedAtString: 2019-09-03T19:58:49.164-03:00
+  initializedAtString: 2019-09-03T19:58:48.989-03:00
   log:
+  - commitID: 2ff47e469918927d275d5eaf81a7313442de2f15
+    mergeA: 
+    mergeB: 
+    authorName: Althierfson
+    authorEmail: 42945474+Althierfson@users.noreply.github.com
+    commitEmail: 42945474+Althierfson@users.noreply.github.com
+    commitName: Althierfson
+    summary: "delay das anima\xE7\xF5es resolvido"
+    description: "Resolvi os problema do delay das anima\xE7\xF5es, coloqui um evento
+      em cada uma, assim quando a nima\xE7\xE3o \xE9 iniciada ela chama a fun\xE7\xE3o
+      de fala, menos anima\xE7ao de fala, que precisa de um metodo especifico."
+    timeString: 2019-09-03T19:56:44.000-03:00
+    commitTimeString: 2019-09-03T19:56:44.000-03:00
+    changes:
+    - path: Assembly-CSharp-Editor-firstpass.csproj
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assembly-CSharp-Editor-firstpass.csproj
+      projectPath: Assembly-CSharp-Editor-firstpass.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\AnimRobo\Alegre\Alegre.anim
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Alegre\Alegre.anim
+      projectPath: Assets\AnimRobo\Alegre\Alegre.anim
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\AnimRobo\Bravo\Bravo.anim
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Bravo\Bravo.anim
+      projectPath: Assets\AnimRobo\Bravo\Bravo.anim
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\AnimRobo\Triste\Triste.anim
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Triste\Triste.anim
+      projectPath: Assets\AnimRobo\Triste\Triste.anim
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\AnimRobo\Vergonha\Vergonha.anim
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Vergonha\Vergonha.anim
+      projectPath: Assets\AnimRobo\Vergonha\Vergonha.anim
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Cenas\jogo1.unity
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Cenas\jogo1.unity
+      projectPath: Assets\Cenas\jogo1.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Agent\SpeekE.cs
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\SpeekE.cs
+      projectPath: Assets\Scripts\Agent\SpeekE.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentLayout.dwlt
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\CurrentLayout.dwlt
+      projectPath: Library\CurrentLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentMaximizeLayout.dwlt
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\CurrentMaximizeLayout.dwlt
+      projectPath: Library\CurrentMaximizeLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ProjectSettings.asset
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ProjectSettings.asset
+      projectPath: Library\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\92d29d-mainStage.json
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\StateCache\Hierarchy\92d29d-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\92d29d-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\SceneView\60217b-mainStage.json
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\StateCache\SceneView\60217b-mainStage.json
+      projectPath: Library\StateCache\SceneView\60217b-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\assetDatabase3
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\expandedItems
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\expandedItems
+      projectPath: Library\expandedItems
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: MemoryGame.sln
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\MemoryGame.sln
+      projectPath: MemoryGame.sln
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: C:\Users\007br\Documents\TCC\MemoryGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 462d205642b000bfe7d818491b28ae390d6fccb8
     mergeA: 
     mergeB: 

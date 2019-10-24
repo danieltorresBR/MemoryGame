@@ -13,54 +13,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-09-03T19:48:55.044-03:00
-  initializedAtString: 2019-09-03T19:48:53.394-03:00
+  lastUpdatedAtString: 2019-10-23T23:21:33.539-03:00
+  initializedAtString: 2019-10-23T23:02:38.641-03:00
   entries:
-  - path: Assembly-CSharp.csproj
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\AnimRobo\Alegre\Alegre.anim
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Alegre\Alegre.anim
-    projectPath: Assets\AnimRobo\Alegre\Alegre.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\AnimRobo\Bravo\Bravo.anim
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Bravo\Bravo.anim
-    projectPath: Assets\AnimRobo\Bravo\Bravo.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\AnimRobo\Triste\Triste.anim
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Triste\Triste.anim
-    projectPath: Assets\AnimRobo\Triste\Triste.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\AnimRobo\Vergonha\Vergonha.anim
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Vergonha\Vergonha.anim
-    projectPath: Assets\AnimRobo\Vergonha\Vergonha.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Assets\Cenas\jogo1.unity
     fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Cenas\jogo1.unity
     projectPath: Assets\Cenas\jogo1.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Assets\Prefabs\Puzzle Button.prefab
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Prefabs\Puzzle Button.prefab
+    projectPath: Assets\Prefabs\Puzzle Button.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\Agent\ctrArquivos.cs
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\ctrArquivos.cs
+    projectPath: Assets\Scripts\Agent\ctrArquivos.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Scripts\Agent\SpeekE.cs
     fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\SpeekE.cs
     projectPath: Assets\Scripts\Agent\SpeekE.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\GameController.cs
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\GameController.cs
+    projectPath: Assets\Scripts\GameController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -79,12 +61,6 @@ MonoBehaviour:
   - path: Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\expandedItems
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\expandedItems
-    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -118,9 +94,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\ProjectSettings.asset
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ProjectSettings.asset
-    projectPath: Library\ProjectSettings.asset
+  - path: Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\metadata\82\8285c22737388564b84116e59369bd2d
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\metadata\82\8285c22737388564b84116e59369bd2d
+    projectPath: Library\metadata\82\8285c22737388564b84116e59369bd2d
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -154,21 +136,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: MemoryGame.sln
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\MemoryGame.sln
-    projectPath: MemoryGame.sln
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     fullPath: C:\Users\007br\Documents\TCC\MemoryGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

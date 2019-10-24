@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Arquivos{
 
-    List<Frase> frases;
+    public List<Frase> frases;
     string id;
     public string filePath = Application.persistentDataPath;
 
@@ -82,6 +82,24 @@ public class Arquivos{
         return null;
     }
 
+    public Frase pickUpEmocao(string sentimento){
+        //Random numAleatorio = new Random();
+        int escolha = (int)Random.Range(0.0F, 3.0F);
+        Frase f = new Frase();
+
+        foreach (Frase item in frases){
+            if(item.emocao.Equals(sentimento)){
+                if(escolha == 0){
+                    f = item;
+                    return f;
+                }else{
+                    escolha--;
+                }
+            }
+        }
+        
+        return null;
+    }
 }
 
 public class Frase{

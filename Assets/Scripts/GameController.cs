@@ -100,10 +100,10 @@ public class GameController : MonoBehaviour {
 
             if(firstGuessPuzzle == secondGuessPuzzle){
                 Debug.Log("Cartas corretas");
-                speekE.reacao(1);
+                speekE.reacao(true);
             } else {
                 Debug.Log("Tente outra vez");
-                speekE.reacao(2);
+                speekE.reacao(false);
             }
 
             countGuesses++;

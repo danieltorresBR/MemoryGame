@@ -20,6 +20,7 @@ public class SpeekE : MonoBehaviour{
     void Start(){
         anim = GetComponent<Animator>();   // Pegando a Animator para controle das animações
         ballonImage.SetActive(false);      // esconde a imagem do balão
+        som = GetComponent<AudioSource>();
 
         ctrArq = new Arquivos("1");
         estadoAtual = ctrArq.getFrases("7");
@@ -41,7 +42,6 @@ public class SpeekE : MonoBehaviour{
         
         // Controle da animação
         animCtr();
-
     }
 
     public void setPassivo(){
@@ -56,18 +56,13 @@ public class SpeekE : MonoBehaviour{
 
     private void animCtr(){
         /*
-            Essa função é responsavel por detectar a voz do agente e ativa a animação correspondente.
             Responsavel também por ativar o balão com a menssagem do Agente.
         */
 
         if(som.isPlaying == true){
-            //anim.SetBool(animState, true);
-            //anim.SetBool("Passivo_1", false);
             ballonImage.SetActive(true);
         }
         if(som.isPlaying == false){
-            //anim.SetBool(animState, false);
-            //anim.SetBool("Passivo_1", true);
             ballonImage.SetActive(false);
         }
     }
@@ -82,26 +77,32 @@ public class SpeekE : MonoBehaviour{
         
     }
 
-    public void reacao(int sentimento){
+    public void reacao(bool rec){
         /*
             Função receber um sentimento e escolhe aleatoriamente uma frase no banco de frases com o sentimento correspondente
         */
 
-        if(sentimento == 1){
-            estadoAtual = ctrArq.getFrases("5");
-            Debug.Log(estadoAtual.msg);
+        if (rec == true){
+            estadoAtual = ctrArq.pickUpEmocao("Alegre");
+        }else{
 
-            setConf(estadoAtual);
+            int sentimento = (int)Random.Range(1, 3);
 
-            startAnimation();
+            if(sentimento == 1 && rec == false){
+                estadoAtual = ctrArq.pickUpEmocao("Triste");
+            }
+
+            if(sentimento == 2 && rec == false){
+                estadoAtual = ctrArq.pickUpEmocao("Bravo");
+            }
+
+            if(sentimento == 3 && rec == false){
+                estadoAtual = ctrArq.pickUpEmocao("Vergonha");
+            }
         }
-        if(sentimento == 2){
-            estadoAtual = ctrArq.getFrases("6");
-            Debug.Log(estadoAtual.msg);
 
-            setConf(estadoAtual);
+        setConf(estadoAtual);
 
-            startAnimation();
-        }
+        startAnimation();
     }
 }
