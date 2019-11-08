@@ -55,7 +55,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AddButtons.cs" />
      <Compile Include="Assets\Scripts\Agent\ctrArquivos.cs" />
-     <Compile Include="Assets\Scripts\Agent\Robo.cs" />
      <Compile Include="Assets\Scripts\Agent\SpeekE.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\MenuInicial.cs" />

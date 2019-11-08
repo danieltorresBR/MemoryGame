@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour {
 
     private string firstGuessPuzzle, secondGuessPuzzle;
 
+    //private int[] tabuleiro;
+
     [SerializeField]
     private SpeekE speekE;
 
@@ -39,6 +41,7 @@ public class GameController : MonoBehaviour {
         AddGamePuzzles();
         //Shuffle(gamePuzzles);
         gameGuesses = gamePuzzles.Count / 2;
+        speekE.gerarDicaFalsa();
     }
 
         void GetButtons()
@@ -54,8 +57,13 @@ public class GameController : MonoBehaviour {
 
     void AddGamePuzzles()
     {
+        /*
+            Essa é a função responsavel por gerar o tabuleiros com os pares
+        */
         int looper = btns.Count;
         int index = 0;
+
+        speekE.tabuleiro = new int[looper];
 
         for (int i=0; i< looper; i++)
         {
@@ -64,6 +72,7 @@ public class GameController : MonoBehaviour {
                 index = 0;
             }
             gamePuzzles.Add(puzzles[index]);
+            speekE.tabuleiro[i] = index;
 
             index++;
         }

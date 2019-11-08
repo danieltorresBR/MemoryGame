@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-10-23T23:21:33.539-03:00
-  initializedAtString: 2019-10-23T23:02:38.641-03:00
+  lastUpdatedAtString: 2019-11-08T16:00:42.267-03:00
+  initializedAtString: 2019-11-08T14:17:36.347-03:00
   entries:
-  - path: Assets\Cenas\jogo1.unity
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Cenas\jogo1.unity
-    projectPath: Assets\Cenas\jogo1.unity
+  - path: Assembly-CSharp.csproj
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Prefabs\Puzzle Button.prefab
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Prefabs\Puzzle Button.prefab
-    projectPath: Assets\Prefabs\Puzzle Button.prefab
+  - path: Assets\AnimRobo\Alegre\Alegre.anim
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\AnimRobo\Alegre\Alegre.anim
+    projectPath: Assets\AnimRobo\Alegre\Alegre.anim
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -34,6 +34,24 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Assets\Scripts\Agent\falas.txt
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\falas.txt
+    projectPath: Assets\Scripts\Agent\falas.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\Agent\Robo.cs
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\Robo.cs
+    projectPath: Assets\Scripts\Agent\Robo.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Scripts\Agent\Robo.cs.meta
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\Robo.cs.meta
+    projectPath: Assets\Scripts\Agent\Robo.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Assets\Scripts\Agent\SpeekE.cs
     fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Assets\Scripts\Agent\SpeekE.cs
     projectPath: Assets\Scripts\Agent\SpeekE.cs
@@ -64,15 +82,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
+  - path: Library\expandedItems
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -118,6 +130,54 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
@@ -130,15 +190,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\SceneView\60217b-mainStage.json
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\Library\StateCache\SceneView\60217b-mainStage.json
-    projectPath: Library\StateCache\SceneView\60217b-mainStage.json
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: C:\Users\007br\Documents\TCC\MemoryGame\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

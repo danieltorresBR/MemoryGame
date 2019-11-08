@@ -83,6 +83,10 @@ public class Arquivos{
     }
 
     public Frase pickUpEmocao(string sentimento){
+        /*
+            Função responsevel por retorna uma frase aleatoria com o sentimento recebido
+        */
+
         //Random numAleatorio = new Random();
         int escolha = (int)Random.Range(0.0F, 3.0F);
         Frase f = new Frase();

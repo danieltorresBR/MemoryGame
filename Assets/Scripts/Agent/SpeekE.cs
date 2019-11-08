@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using Crosstales.RTVoice;
 using Crosstales.RTVoice.Model;
 
+
 public class SpeekE : MonoBehaviour{
     
     public AudioSource som;            // Audio da Voz
@@ -14,20 +15,18 @@ public class SpeekE : MonoBehaviour{
     public GameObject ballonImage;     // Imagem do balão
     public Text textBallon;            // Texto no balão
     private string animState;          // Guarda a animação atual
-    Frase estadoAtual = new Frase();
-    Arquivos ctrArq;
+    Frase estadoAtual = new Frase();   // Objeto estado
+    Arquivos ctrArq;                   // Objeto para acesso a L/E nos arquivos
+    public int[] tabuleiro;
+    int dica1, dica2;
 
     void Start(){
         anim = GetComponent<Animator>();   // Pegando a Animator para controle das animações
         ballonImage.SetActive(false);      // esconde a imagem do balão
         som = GetComponent<AudioSource>();
 
-        ctrArq = new Arquivos("1");
-        estadoAtual = ctrArq.getFrases("7");
-        Debug.Log(estadoAtual.msg);
+        ctrArq = new Arquivos("1");        // Criando novo arquivo com ID informado
         print(ctrArq.filePath);
-
-        setConf(estadoAtual);   
     }
 
     public void Speek(){
@@ -41,7 +40,7 @@ public class SpeekE : MonoBehaviour{
     void Update(){
         
         // Controle da animação
-        animCtr();
+        animCtr();  // Ativando balão de animação
     }
 
     public void setPassivo(){
@@ -56,7 +55,7 @@ public class SpeekE : MonoBehaviour{
 
     private void animCtr(){
         /*
-            Responsavel também por ativar o balão com a menssagem do Agente.
+            Responsavel por ativar o balão com a menssagem do Agente.
         */
 
         if(som.isPlaying == true){
@@ -104,5 +103,49 @@ public class SpeekE : MonoBehaviour{
         setConf(estadoAtual);
 
         startAnimation();
+    }
+
+    public void gerarDicaCorreta(){
+        int dica1, dica2;
+
+        for(int i=0;i<tabuleiro.Length;i++){
+            dica1 = tabuleiro[i];
+
+            if(dica1 != -1){
+                for(int j=i+1;j<tabuleiro.Length;j++){
+                    dica2 = tabuleiro[j];
+
+                    if(dica1 == dica2){
+                        this.dica1 = i+1;
+                        this.dica2 = j+1;
+                        falarDica();
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
+    public void gerarDicaFalsa(){
+        int escolha1 = (int)Random.Range(0.0F, tabuleiro.Length);
+        int escolha2 = escolha1;
+        while(escolha1 == escolha2){
+            escolha2 = (int)Random.Range(0.0F, tabuleiro.Length);
+        }
+
+        dica1 = escolha1;
+        dica2 = escolha2;
+        falarDica();
+    }
+
+    private void falarDica(){
+
+        estadoAtual = ctrArq.getFrases("2");
+
+        estadoAtual.msg = estadoAtual.msg+ " " +dica1.ToString()+ " e a "+ dica2.ToString()+ ".";
+        Debug.Log(estadoAtual.msg);
+
+        setConf(estadoAtual);
+        Speek();
     }
 }
