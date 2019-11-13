@@ -66,13 +66,14 @@ public class SpeekE : MonoBehaviour{
         }
     }
 
-    private void setConf(Frase frase){
+    private void setConf(){
         /*
             Essa função é responsavel por receber um objeto frase e setar a frase no balão, na voz do robo e definir a animação
         */
         
-        textBallon.text = frase.msg;
-        animState = frase.emocao;
+        Debug.Log(estadoAtual.msg);
+        textBallon.text = estadoAtual.msg;
+        animState = estadoAtual.emocao;
         
     }
 
@@ -87,22 +88,21 @@ public class SpeekE : MonoBehaviour{
 
             int sentimento = (int)Random.Range(1, 3);
 
-            if(sentimento == 1 && rec == false){
+            if(sentimento == 1){
+                estadoAtual = ctrArq.pickUpEmocao("Triste");
+            }else if(sentimento == 2){
+                estadoAtual = ctrArq.pickUpEmocao("Bravo");
+            }else if(sentimento == 3){
+                estadoAtual = ctrArq.pickUpEmocao("Vergonha");
+            }else{
                 estadoAtual = ctrArq.pickUpEmocao("Triste");
             }
-
-            if(sentimento == 2 && rec == false){
-                estadoAtual = ctrArq.pickUpEmocao("Bravo");
-            }
-
-            if(sentimento == 3 && rec == false){
-                estadoAtual = ctrArq.pickUpEmocao("Vergonha");
-            }
         }
+        if(estadoAtual != null){
+            setConf();
 
-        setConf(estadoAtual);
-
-        startAnimation();
+            startAnimation();
+        }
     }
 
     public void gerarDicaCorreta(){
@@ -127,10 +127,10 @@ public class SpeekE : MonoBehaviour{
     }
 
     public void gerarDicaFalsa(){
-        int escolha1 = (int)Random.Range(0.0F, tabuleiro.Length);
+        int escolha1 = (int)Random.Range(1, tabuleiro.Length);
         int escolha2 = escolha1;
-        while(escolha1 == escolha2){
-            escolha2 = (int)Random.Range(0.0F, tabuleiro.Length);
+        while(this.tabuleiro[escolha1] == this.tabuleiro[escolha2] || this.tabuleiro[escolha1] == -1 || this.tabuleiro[escolha2] == -1){
+            escolha2 = (int)Random.Range(1, tabuleiro.Length);
         }
 
         dica1 = escolha1;
@@ -141,11 +141,14 @@ public class SpeekE : MonoBehaviour{
     private void falarDica(){
 
         estadoAtual = ctrArq.getFrases("2");
+        Debug.Log("arquivo speek: "+estadoAtual.msg);
+        estadoAtual.msg = "Esperimente virar a carta";
 
         estadoAtual.msg = estadoAtual.msg+ " " +dica1.ToString()+ " e a "+ dica2.ToString()+ ".";
         Debug.Log(estadoAtual.msg);
 
-        setConf(estadoAtual);
-        Speek();
+        setConf();
+        //Speek();
+        startAnimation();
     }
 }

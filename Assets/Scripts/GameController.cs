@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour {
         GetButtons();
         AddListeneers();
         AddGamePuzzles();
-        //Shuffle(gamePuzzles);
+        Shuffle(gamePuzzles);
         gameGuesses = gamePuzzles.Count / 2;
         speekE.gerarDicaFalsa();
     }
@@ -110,9 +110,12 @@ public class GameController : MonoBehaviour {
             if(firstGuessPuzzle == secondGuessPuzzle){
                 Debug.Log("Cartas corretas");
                 speekE.reacao(true);
+                speekE.tabuleiro[firstGuessIndex] = -1;
+                speekE.tabuleiro[secondGuessIndex] = -1;
             } else {
                 Debug.Log("Tente outra vez");
-                speekE.reacao(false);
+                //speekE.reacao(false);
+                speekE.gerarDicaFalsa();
             }
 
             countGuesses++;
@@ -162,15 +165,18 @@ public class GameController : MonoBehaviour {
         }
     }
 
- //   void Shuffle(List<Sprite> list) // funcao randomica
- //   {
- //       for (int i=0; i < list.Count; i++)
- //      {
- //           Sprite temp = list[i];
- //           int randomIndex = Random.Range(i, list.Count);
- //           list[i] = list[i];
- //           list[i] = temp;
- //       }
- //   }
+    void Shuffle(List<Sprite> list) // funcao randomica
+    {
+        for (int i=0; i < list.Count; i++)
+       {
+            Sprite temp = list[i];
+            int inttemp = speekE.tabuleiro[i];
+            int randomIndex = Random.Range(i, list.Count);
+            list[i] = list[randomIndex];
+            speekE.tabuleiro[i] = speekE.tabuleiro[randomIndex];
+            list[randomIndex] = temp;
+            speekE.tabuleiro[randomIndex] = inttemp;
+        }
+    }
 
 } // GameController

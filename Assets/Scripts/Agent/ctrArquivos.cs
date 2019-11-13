@@ -23,7 +23,7 @@ public class Arquivos{
             Criar o arquivo de saida para o individo
         */
         string cabecalho;
-
+        Debug.Log(filePath);
         // C:/Users/007br/Documents/TCC/UnityEmotionalAgent/EmotionalAgent/Assets/Scripts
         using(StreamWriter file = File.CreateText(filePath + "/individo" + id + ".txt")){
                 cabecalho = "EmoçãoClasse;Código;Frase";
@@ -75,6 +75,7 @@ public class Arquivos{
         foreach(Frase frase in frases){
             if(frase.codigo.Equals(cod)){
                 f = frase;
+                Debug.Log("arquivo CTR: "+f.msg);
                 return f;
             }
         }
@@ -85,15 +86,16 @@ public class Arquivos{
     public Frase pickUpEmocao(string sentimento){
         /*
             Função responsevel por retorna uma frase aleatoria com o sentimento recebido
+            ToDo: reoganizar a forma de buscar frases aleatorias
         */
 
         //Random numAleatorio = new Random();
-        int escolha = (int)Random.Range(0.0F, 3.0F);
+        int escolha = (int)Random.Range(0, 2);
         Frase f = new Frase();
 
         foreach (Frase item in frases){
             if(item.emocao.Equals(sentimento)){
-                if(escolha == 0){
+                if(escolha <= 0){
                     f = item;
                     return f;
                 }else{
